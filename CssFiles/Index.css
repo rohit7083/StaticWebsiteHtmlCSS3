@@ -1,0 +1,605 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h1.mytitlenm {
+    position: relative;
+    right: 13rem;
+}
+.navbar {
+    background-color: rgb(212, 212, 212);
+
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+
+}
+   
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+    h1.mytitlenm {
+        position: relative;
+        left: 0rem;
+    }
+}
+
+/* ========== images =========== */
+
+/* General Styles */
+.content {
+    height: 860px;
+    background-color: rgb(212, 212, 212);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Added to handle smaller screens */
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    position: relative;
+    top: 3rem;
+}
+
+.text h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Adjusted for better responsiveness */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 5rem;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+    padding: 8px 40px;
+    border: none; /* Added border none */
+    cursor: pointer; /* Added cursor pointer */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .text {
+        padding-right: 0; /* Remove padding */
+        position: static; /* Reset position */
+        margin-bottom: 2rem; /* Space between text and image */
+    }
+
+    .text h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .image img {
+        position: static; /* Reset position */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .btn1 {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .btn1 {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+/* Mobile phones (extra small) */
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.5rem; /* Even smaller font size */
+    }
+
+    .btn1 {
+        padding: 8px 16px; /* Smaller padding */
+        font-size: 0.8rem; /* Even smaller font size */
+    }
+}
+
+/* ================== category and bestSellors ================================ */
+
+/* General Styles */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px; /* Adds space between cards */
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    max-width: calc(33.333% - 20px); /* Default: Three cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-title {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Padding for Category Sections */
+.Cate {
+    padding: 2rem;
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+/* Responsive Styles */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .card {
+        max-width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+/* Mobile phones and smaller tablets */
+@media (max-width: 480px) {
+    .container2 {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .card {
+        max-width: 100%; /* Full width for each card */
+        margin: 10px 0; /* Vertical margin */
+    }
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 320px) {
+    .Cate {
+        padding: 1rem; /* Reduce padding for very small screens */
+    }
+    
+    .card-title {
+        font-size: 1em; /* Reduce font size for smaller screens */
+    }
+}
+
+/* ============== contaner 3 ==================== */
+
+/* Default styling for larger screens (laptops and desktops) */
+.container3 {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: lightgray;
+    padding: 6rem 0;
+}
+
+.title-container {
+    flex: 1;
+    max-width: 30%;
+    padding-right: 20px;
+    font-size: 22px;
+}
+
+.details-container {
+    flex: 2;
+    max-width: 70%;
+    
+        margin: 28px 90px;
+
+}
+
+.details {
+    margin-bottom: 20px;
+    width: 100%; /* Full width to fit smaller screens */
+    position: relative;
+    left: 0; /* Adjust for alignment */
+}
+
+.headD {
+    margin-bottom: 10px;
+}
+
+.mypara {
+    margin: 0;
+}
+
+/* Media query for tablets (portrait and landscape) */
+@media (max-width: 768px) {
+    .title-container, .details-container {
+        max-width: 100%;
+        flex: 1 1 100%;
+        margin: 9px 0px;
+    }
+
+    .details {
+        width: 100%; /* Full width for tablets */
+        left: 0; /* Reset alignment */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .container3 {
+        padding: 4rem 0; /* Adjust padding for smaller screens */
+    }
+
+    .details {
+        padding: 0 10px; /* Add padding for mobile view */
+    }
+}
+
+
+
+/* ============ conatiner 4 ========= */
+
+.container4 {
+    position: relative;
+    height: 35rem; /* Default height */
+    background-image: url('https://m0r5p0.yourbrand.studio/files/dynamicContent/sites/m0r5p0/images/en/webpage_44/lwrs3g7u/element_863/pexels-cottonbro-studio-5190596.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.container4 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(35%); /* Adjust brightness as needed */
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.innertext {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+    color: white; /* Text color */
+    text-align: center; /* Center text horizontally */
+    padding: 0 20px; /* Padding for smaller screens */
+}
+
+h1.con4head {
+    font-size: 5.5rem; /* Responsive font size */
+    margin: 10px 0; /* Adjust margins for responsiveness */
+}
+
+p.con4title {
+    font-size: 1.2rem; /* Responsive font size */
+    margin: 0;
+}
+
+p.con4price {
+    font-size: 1.5rem; /* Responsive font size */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+p.con4para {
+    font-size: 1rem; /* Responsive font size */
+    line-height: 1.5; /* Improve readability */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+button.btn2 {
+    padding: 10px 20px; /* Adjust padding */
+    background-color: black;
+    color: white;
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for better UX */
+    margin: 20px 0; /* Margin for spacing */
+    font-size: 1rem; /* Responsive font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button.btn2:hover {
+    background-color: #333; /* Slight color change on hover */
+}
+
+/* Responsive Styles */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .container4 {
+        height: auto; /* Adjust height to fit content */
+        background-position: center; /* Center background image */
+    }
+
+    h1.con4head {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    p.con4title {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    p.con4price {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    p.con4para {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    button.btn2 {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container4 {
+        padding: 20px; /* Add padding for small screens */
+        background-position: center; /* Center background image */
+    }
+
+    h1.con4head {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    p.con4title {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    p.con4price {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    p.con4para {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    button.btn2 {
+        padding: 6px 12px; /* Adjust padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
+
+
+/*============= footer ========= */
+
+.footer {
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+}
+
+
+/* ===================================== .container5  ================ */
+
+.container5 {
+    position: relative;
+    height: 35rem; /* Default height */
+    background-image: url('https://m0r5p0.yourbrand.studio/files/dynamicContent/sites/m0r5p0/images/en/webpage_44/lwrs3g7u/element_815/pexels-mart-production-7718634.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    margin: 9rem 0; /* Margin for spacing */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 0 20px; /* Padding for small screens */
+    box-sizing: border-box;
+}
+
+.container5 .overlay5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(35%); /* Adjust brightness as needed */
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.innertext5 {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+    color: white; /* Text color */
+    text-align: center; /* Center text horizontally */
+    max-width: 600px; /* Limit text width for readability */
+}
+
+h1.con5head {
+    font-size: 2.5rem; /* Responsive font size */
+    margin: 0 0 1rem 0; /* Margin for spacing */
+}
+
+p.con5para {
+    font-size: 1.2rem; /* Responsive font size */
+    line-height: 1.5; /* Improve readability */
+    margin: 0 0 1rem 0; /* Margin for spacing */
+}
+
+input.con5text {
+    padding: 10px;
+    margin: 0 0 1rem 0; /* Margin for spacing */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit width for larger screens */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button.btn4 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px; /* Adjust padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for better UX */
+    font-size: 1rem; /* Responsive font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button.btn4:hover {
+    background-color: #333; /* Slight color change on hover */
+}
+
+/* Responsive Styles */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .container5 {
+        height: auto; /* Adjust height to fit content */
+        background-position: center; /* Center background image */
+    }
+
+    .innertext5 {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1.con5head {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    p.con5para {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    input.con5text {
+        max-width: 300px; /* Limit width for smaller screens */
+    }
+
+    button.btn4 {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container5 {
+        padding: 20px; /* Add padding for small screens */
+        height: auto; /* Adjust height to fit content */
+        background-position: center; /* Center background image */
+    }
+
+    .innertext5 {
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    h1.con5head {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    p.con5para {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    input.con5text {
+        width: 100%; /* Full width for small screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    button.btn4 {
+        padding: 6px 12px; /* Adjust padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
