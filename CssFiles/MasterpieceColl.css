@@ -2,267 +2,205 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+    }
+    body{
     font-family: sans-serif;
-}
-
-h1.mytitlenm {
+    }
+    h1.mytitlenm {
     position: relative;
     right: 13rem;
-}
-.navbar {
-
-}
-
-.nav-list {
+    }
+    .nav-list {
     list-style-type: none;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-}
-
-.nav-list li {
+    }
+    .nav-list li {
     margin: 0 15px;
-}
-
-.nav-list a {
+    }
+    .nav-list a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     padding: 8px 12px;
     display: block;
-
-}
-   
-
-@media (max-width: 768px) {
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
     }
-
+    @media (max-width: 768px) {
+    .nav-list {
+    flex-direction: column;
+    align-items: center;
+    }
     .nav-list li {
-        margin: 10px 0;
+    margin: 10px 0;
     }
     h1.mytitlenm {
-        position: relative;
-        left: 0rem;
+    position: relative;
+    left: 0rem;
     }
-}
-
-
-/* ================================ */
-
-
-.container2 {
+    }
+    .container2 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     box-sizing: border-box;
-    gap: 20px; /* Adds space between cards */
-}
-
-.card {
+    gap: 20px;
+    }
+    .card {
     flex: 1;
     margin: 10px;
-    max-width: calc(33.333% - 20px); /* Default: Three cards per row */
+    max-width: calc(33.333% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
     background-color: #fff;
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-.card img {
+    transition: transform 0.3s ease;
+    }
+    .card:hover {
+    transform: scale(1.05);
+    }
+    .card img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.card-title {
+    }
+    .card-title {
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
-}
-
-/* Padding for Category Sections */
-.Cate {
-    padding: 2rem;
-    margin-bottom: 20px; /* Add space between sections */
-    font-size: 2rem;
-}
-
-/* Responsive Styles */
-
-/* Tablets and below */
-@media (max-width: 768px) {
-    .card {
-        max-width: calc(50% - 20px); /* Two cards per row */
     }
-}
-
-/* Mobile phones and smaller tablets */
-@media (max-width: 480px) {
-    .container2 {
-        flex-direction: column; /* Stack cards vertically */
-    }
-
-    .card {
-        max-width: 100%; /* Full width for each card */
-        margin: 10px 0; /* Vertical margin */
-    }
-}
-
-/* Adjust padding for smaller screens */
-@media (max-width: 320px) {
     .Cate {
-        padding: 1rem; /* Reduce padding for very small screens */
+    padding: 2rem;
+    margin-bottom: 20px;
+    font-size: 2rem;
     }
-    
+    @media (max-width: 768px) {
+    .card {
+    max-width: calc(50% - 20px);
+    }
+    }
+    @media (max-width: 480px) {
+    .container2 {
+    flex-direction: column;
+    }
+    .card {
+    max-width: 100%;
+    margin: 10px 0;
+    }
+    }
+    @media (max-width: 320px) {
+    .Cate {
+    padding: 1rem;
+    }
     .card-title {
-        font-size: 1em; /* Reduce font size for smaller screens */
+    font-size: 1em;
     }
-}
-
-
-
-/* ============================ */
-
-
-.container5 {
+    }
+    .container5 {
     position: relative;
-    height: 35rem; /* Default height */
-    background-image: url('https://m0r5p0.yourbrand.studio/files/dynamicContent/sites/m0r5p0/images/en/webpage_44/lwrs3g7u/element_815/pexels-mart-production-7718634.png'); /* Replace with your image URL */
+    height: 35rem;
+    background-image: url('https://m0r5p0.yourbrand.studio/files/dynamicContent/sites/m0r5p0/images/en/webpage_44/lwrs3g7u/element_815/pexels-mart-production-7718634.png');
     background-size: cover;
-    background-position: center; /* Center the background image */
-    margin: 9rem 0; /* Margin for spacing */
+    background-position: center;
+    margin: 9rem 0;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    padding: 0 20px; /* Padding for small screens */
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
     box-sizing: border-box;
-}
-
-.container5 .overlay5 {
+    }
+    .container5 .overlay5 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: brightness(35%); /* Adjust brightness as needed */
-    z-index: 1; /* Ensure overlay is above the image */
-}
-
-.innertext5 {
+    filter: brightness(35%);
+    z-index: 1;
+    }
+    .innertext5 {
     position: relative;
-    z-index: 2; /* Ensure text is above the overlay */
-    color: white; /* Text color */
-    text-align: center; /* Center text horizontally */
-    max-width: 600px; /* Limit text width for readability */
-}
-
-h1.con5head {
-    font-size: 2.5rem; /* Responsive font size */
-    margin: 0 0 1rem 0; /* Margin for spacing */
-}
-
-p.con5para {
-    font-size: 1.2rem; /* Responsive font size */
-    line-height: 1.5; /* Improve readability */
-    margin: 0 0 1rem 0; /* Margin for spacing */
-}
-
-input.con5text {
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    }
+    h1.con5head {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    }
+    p.con5para {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    }
+    input.con5text {
     padding: 10px;
-    margin: 0 0 1rem 0; /* Margin for spacing */
-    width: 100%; /* Full width */
-    max-width: 400px; /* Limit width for larger screens */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners */
-}
-
-button.btn4 {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 4px;
+    }
+    button.btn4 {
     background-color: black;
     color: white;
-    padding: 10px 20px; /* Adjust padding */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor for better UX */
-    font-size: 1rem; /* Responsive font size */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-button.btn4:hover {
-    background-color: #333; /* Slight color change on hover */
-}
-
-/* Responsive Styles */
-
-/* Tablets and below */
-@media (max-width: 768px) {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    }
+    button.btn4:hover {
+    background-color: #333;
+    }
+    @media (max-width: 768px) {
     .container5 {
-        height: auto; /* Adjust height to fit content */
-        background-position: center; /* Center background image */
+    height: auto;
+    background-position: center;
     }
-
     .innertext5 {
-        padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px;
     }
-
     h1.con5head {
-        font-size: 2rem; /* Smaller font size */
+    font-size: 2rem;
     }
-
     p.con5para {
-        font-size: 1rem; /* Smaller font size */
+    font-size: 1rem;
     }
-
     input.con5text {
-        max-width: 300px; /* Limit width for smaller screens */
+    max-width: 300px;
     }
-
     button.btn4 {
-        padding: 8px 16px; /* Adjust padding */
-        font-size: 0.9rem; /* Smaller font size */
+    padding: 8px 16px;
+    font-size: 0.9rem;
     }
-}
-
-/* Mobile phones */
-@media (max-width: 480px) {
+    }
+    @media (max-width: 480px) {
     .container5 {
-        padding: 20px; /* Add padding for small screens */
-        height: auto; /* Adjust height to fit content */
-        background-position: center; /* Center background image */
+    padding: 20px;
+    height: auto;
+    background-position: center;
     }
-
     .innertext5 {
-        padding: 0 10px; /* Adjust padding */
+    padding: 0 10px;
     }
-
     h1.con5head {
-        font-size: 1.5rem; /* Smaller font size */
+    font-size: 1.5rem;
     }
-
     p.con5para {
-        font-size: 0.9rem; /* Smaller font size */
+    font-size: 0.9rem;
     }
-
     input.con5text {
-        width: 100%; /* Full width for small screens */
-        max-width: none; /* Remove max-width constraint */
+    width: 100%;
+    max-width: none;
     }
-
     button.btn4 {
-        padding: 6px 12px; /* Adjust padding */
-        font-size: 0.8rem; /* Smaller font size */
+    padding: 6px 12px;
+    font-size: 0.8rem;
     }
-}
+    }
